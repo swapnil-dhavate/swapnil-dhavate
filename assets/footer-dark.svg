@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="150" viewBox="0 0 1200 150" fill="none" role="img" aria-label="AI drafts, code checks the numbers, and nothing goes public without approval."><title>AI drafts, code checks the numbers, and nothing goes public without approval.</title><style>
+    text { font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif; }
+    .mono { font-family: ui-monospace, 'SF Mono', 'Cascadia Code', Consolas, 'Liberation Mono', monospace; }
+    .fade { animation: fadeUp .8s cubic-bezier(.2,.7,.2,1) both; }
+    @keyframes fadeUp { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+    @keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: .35; } }
+    @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+    </style><defs>
+  <linearGradient id="gBrand" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#60A5FA"/><stop offset=".55" stop-color="#A78BFA"/><stop offset="1" stop-color="#22D3EE"/>
+  </linearGradient>
+  <linearGradient id="gBrandV" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#A78BFA"/><stop offset="1" stop-color="#60A5FA"/>
+  </linearGradient>
+  <linearGradient id="gCard" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#111831"/><stop offset="1" stop-color="#0E1530"/>
+  </linearGradient>
+  <pattern id="pDots" width="22" height="22" patternUnits="userSpaceOnUse">
+    <circle cx="2" cy="2" r="1.1" fill="#1E2746"/>
+  </pattern>
+</defs><path d="M0 60 C 200 20, 400 100, 600 60 S 1000 20, 1200 60 L1200 150 L0 150 Z" fill="url(#gBrand)" opacity=".12"><animate attributeName="d" dur="9s" repeatCount="indefinite" values="M0 60 C 200 20, 400 100, 600 60 S 1000 20, 1200 60 L1200 150 L0 150 Z;M0 70 C 200 100, 400 30, 600 70 S 1000 100, 1200 50 L1200 150 L0 150 Z;M0 60 C 200 20, 400 100, 600 60 S 1000 20, 1200 60 L1200 150 L0 150 Z"/></path><text x="600" y="100" font-size="19" font-weight="600" fill="#E8ECF4" text-anchor="middle" font-style="italic">“AI drafts, code checks the numbers, and nothing goes public without approval.”</text><text x="600" y="128" font-size="11" font-weight="700" fill="#A3AEC2" text-anchor="middle" class="mono" letter-spacing="2">THE RULE BEHIND EVERY PROJECT HERE</text></svg>

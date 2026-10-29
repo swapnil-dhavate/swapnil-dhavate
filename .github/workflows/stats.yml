@@ -1,0 +1,33 @@
+name: Refresh profile stats
+
+on:
+  schedule:
+    - cron: "30 0 * * *" # 06:00 IST daily
+  workflow_dispatch:
+  push:
+    paths: ["scripts/build.py"]
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      # STATS_TOKEN: fine-grained PAT, all repositories, read-only Contents + Metadata.
+      # Without it the job rebuilds from the cached data/stats.json.
+      - name: Build assets
+        env:
+          STATS_TOKEN: ${{ secrets.STATS_TOKEN }}
+        run: python scripts/build.py --fetch
+      - name: Commit if changed
+        run: |
+          git config user.name "profile-stats-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A assets data README.md
+          git diff --cached --quiet || git commit -m "Refresh profile stats"
+          git push
